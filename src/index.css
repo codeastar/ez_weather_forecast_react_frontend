@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* EZW */
+
+.ezw_datepicker {
+  font-size: 0.8em;
+  border-radius: 0.5em;
+  box-shadow: inset 0 0.2em 0.2em #e9e9e9;
+  border: 0.1em solid #aeaeae;
+  line-height: 1em;
+  padding: 0.6em 0.8em 0.5em;
+  margin: 0.5em auto;
+}
+
+.ezw_to {
+  font-size: 0.8em;
+  display: inline;
+  padding: 0.6em 0.8em 0.5em;
+}
+
+/* GEO suggest */
+
+.geosuggest {
+
+  font-size: 1rem;
+  position: relative;
+  width: 100%;
+  margin: 0.5em auto;
+  text-align: left;
+}
+.geosuggest__input {
+  width: 100%;
+  border-radius: 0.5em;
+  box-shadow: inset 0 0.2em 0.2em #e9e9e9;
+  border: 0.1em solid #aeaeae;
+  padding: .5em 1em;
+  -webkit-transition: border 0.2s, box-shadow 0.2s;
+          transition: border 0.2s, box-shadow 0.2s;
+}
+.geosuggest__input:focus {
+  border-color: #267dc0;
+  box-shadow: 0 0 0 transparent;
+}
+.geosuggest__suggests {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 25em;
+  padding: 0;
+  margin-top: -1px;
+  background: #fff;
+  border: 2px solid #267dc0;
+  border-top-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  list-style: none;
+  z-index: 5;
+  -webkit-transition: max-height 0.2s, border 0.2s;
+          transition: max-height 0.2s, border 0.2s;
+}
+.geosuggest__suggests--hidden {
+  max-height: 0;
+  overflow: hidden;
+  border-width: 0;
+}
+
+/**
+ * A geosuggest item
+ */
+.geosuggest__item {
+  font-size: 1rem;
+  padding: .5em .65em;
+  cursor: pointer;
+}
+.geosuggest__item:hover,
+.geosuggest__item:focus {
+  background: #f5f5f5;
+}
+.geosuggest__item--active {
+  background: #267dc0;
+  color: #fff;
+}
+.geosuggest__item--active:hover,
+.geosuggest__item--active:focus {
+  background: #ccc;
+}
+.geosuggest__item__matched-text {
+  font-weight: bold;
+}
+
+/* Responsive setting */
+
+@media (max-width: 576px) {
+  .wrap_ezw {
+    padding: 72px 15px 90px 15px;
+  }
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+/* Background */
+.bg_ezw {
+  width: 100%;  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container_ezw {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*  padding: 0em 15px 0em 15px; */
+  padding: 15px;
+  background: #1d1acc;
+  background: -webkit-linear-gradient(135deg,#1d1acc, #1793b6);
+  background: -o-linear-gradient(135deg, #1d1acc, #1793b6);
+  background: -moz-linear-gradient(135deg, #1d1acc, #1793b6);
+  background: linear-gradient(135deg, #1d1acc, #1793b6);
+}
+
+.wrap_ezw {
+  width: 790px;
+  /* width: 75%; */
+  background: #fff;
+  border-radius: 1em;
+  overflow: hidden;
+  padding: 2em 5em 4em 3em;
+}
+
+/* UI component */ 
+.comp_ezw {
+  margin: 0.5em auto;
+  font-weight: 500;
+}
+
+/* report componet */
+.report_ezw {
+  margin-top: 1em;
+}
+
+/* button */
+
+.button_ezw {
+  background: #3b71c6;
+  font-size: 1em;
+  margin-top: 1.5em;
+  color: #ffffff;
+  border-radius: 0.3em;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.button_ezw:disabled,
+.button_ezw[disabled]{
+  background-color: rgb(185, 190, 212);
+  color: #666666;
+}
+
+/* weather report format */ 
+.weather_info {
+  display: inline-block;
+  width: 60%;
+}
+
+.location {
+  font-weight: 600;
+  margin: 0.6em auto;
+  font-size: 1.3em;
+}
+
+.weather_card {
+  display: table;
+  width: 100%;
+  box-shadow: 10px 5px 5px #3c3e55;
+  border-spacing: 10px;
+  background-color: #e6e6e6;
+  margin: 18px auto;
+}
+
+.weather_icon { 
+  font-size: 4.5em;
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+}
+
+.report_item { 
+  font-weight: 600;
+  display: inline-flex;
+}
