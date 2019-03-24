@@ -131,7 +131,6 @@ body, html {
 
 .container_ezw {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -147,7 +146,7 @@ body, html {
 
 .wrap_ezw {
   width: 790px;
-  height: 450px;	
+  min-height: 500px;	
   /* width: 75%; */
   border-radius: 1em;
   overflow: hidden;
