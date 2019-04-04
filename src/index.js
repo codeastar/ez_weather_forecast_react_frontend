@@ -167,7 +167,6 @@ class Ezw extends React.Component {
 
       return (      
         <div>
-        <h1>EZ Weather Forecast React Frontend</h1>
             <div className="comp_ezw">
                 <div>Date range:</div>
                 <DatePicker

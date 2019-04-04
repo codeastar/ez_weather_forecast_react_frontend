@@ -131,7 +131,6 @@ body, html {
 
 .container_ezw {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -142,20 +141,21 @@ body, html {
   align-items: center;
   /*  padding: 0em 15px 0em 15px; */
   padding: 15px;
-  background: #1d1acc;
-  background: -webkit-linear-gradient(135deg,#1d1acc, #1793b6);
-  background: -o-linear-gradient(135deg, #1d1acc, #1793b6);
-  background: -moz-linear-gradient(135deg, #1d1acc, #1793b6);
-  background: linear-gradient(135deg, #1d1acc, #1793b6);
+  background: #fff;
 }
 
 .wrap_ezw {
   width: 790px;
+  min-height: 500px;	
   /* width: 75%; */
-  background: #fff;
   border-radius: 1em;
   overflow: hidden;
   padding: 2em 5em 4em 3em;
+  background: #97c9e0;
+  background: -webkit-linear-gradient(135deg,#97c9e0,#ffffff);
+  background: -o-linear-gradient(135deg,#97c9e0,#ffffff);
+  background: -moz-linear-gradient(135deg,#97c9e0,#ffffff);
+  background: linear-gradient(135deg,#97c9e0,#ffffff);
 }
 
 /* UI component */ 
@@ -210,6 +210,7 @@ body, html {
 }
 
 .weather_icon { 
+  vertical-align: top;
   font-size: 4.5em;
   display: inline-block;
   text-align: center;
