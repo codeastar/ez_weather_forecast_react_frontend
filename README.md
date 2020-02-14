@@ -15,5 +15,5 @@ Full document: https://www.codeastar.com/react-frontend-weather-forecast-2/
 # EZW Wep App sample
 ![EZW demo](https://i1.wp.com/www.codeastar.com/wp-content/uploads/2019/03/ezw_demo.gif "EZW Web App")
 
-# Live Demo
-https://www.codeastar.com/ez-weather-forecast/
+# ~Live Demo~
+~https://www.codeastar.com/ez-weather-forecast/~
